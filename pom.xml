@@ -102,11 +102,11 @@
     <akka.group>com.typesafe.akka</akka.group>
     <akka.version>2.3.15</akka.version>
 
-    <protobuf.version>2.5.0</protobuf.version>
+    <protobuf.version>3.4.0</protobuf.version>
     <jsr305.version>3.0.1</jsr305.version>
 
     <test.java.home>${java.home}</test.java.home>
-    <test.exclude.tags />
+    <test.exclude.tags/>
 
     <!-- Modules that copy jars to the build directory should do so under this location. -->
     <jars.target.dir>${project.build.directory}/scala-${scala.binary.version}/jars</jars.target.dir>
@@ -600,7 +600,7 @@
             <junitxml>.</junitxml>
             <filereports>SparkTestSuite.txt</filereports>
             <argLine>-ea -Xmx3g -XX:MaxPermSize=${MaxPermGen} -XX:ReservedCodeCacheSize=${CodeCacheSize}</argLine>
-            <stderr />
+            <stderr/>
             <environmentVariables>
               <!--
                 Setting SPARK_DIST_CLASSPATH is a simple way to make sure any child processes
@@ -745,7 +745,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -758,7 +758,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -771,7 +771,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -911,7 +911,7 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${project.build.directory}/tmp" />
+                <mkdir dir="${project.build.directory}/tmp"/>
               </target>
             </configuration>
           </execution>
